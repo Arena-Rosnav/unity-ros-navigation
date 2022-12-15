@@ -1,0 +1,116 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Unity.Robotics.ROSTCPConnector;
+
+using RosMessageTypes.Sensor;
+using RosMessageTypes.Std;
+
+public class Scan : MonoBehaviour {
+    public float minAngle;
+    public float maxAngle;
+
+    public int numBeans;
+    public float range;
+    public int updateRate;
+
+    public string frameId;
+
+    public string topicNamespace;
+
+    float increment;
+    
+    List<GameObject> laserPoints;
+    float[] distances;
+
+    ROSConnection ros;
+    string topicName;
+    
+    uint seq; 
+
+    int counter = 0;
+
+    void Start() {
+
+        /// TODO FRAME ID
+
+        topicName = topicNamespace + "/scan";
+
+        ros = ROSConnection.GetOrCreateInstance();
+        ros.RegisterPublisher<LaserScanMsg>(topicName);
+
+        increment = (float) (maxAngle - minAngle) / ((float) numBeans);
+        seq = 0;
+
+        distances = new float[numBeans];
+        laserPoints = new List<GameObject>();
+
+        for(int i = 0; i < numBeans; i++ ) {
+            GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            Collider collider = sphere.GetComponent<Collider>();
+            collider.enabled = false;
+            sphere.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+            // sphere.GetComponent<Renderer>().material.color = new Color(255, 0, 0, 1);
+
+            sphere.SetActive(false);
+            
+            laserPoints.Add(sphere);
+        }
+    }
+
+    void Update() {
+        for( int i = 0; i < numBeans; i++ ) {
+            if ( counter == i ) {
+                laserPoints[0].GetComponent<Renderer>().material.color = new Color(255, 0, 0, 1);
+            } else {
+                laserPoints[i].GetComponent<Renderer>().material.color = new Color(255, 255, 255, 1);
+            }
+
+            double currentAngle = minAngle + i * increment;
+
+            double x = Math.Cos(currentAngle + Math.PI / 2);
+            double z = Math.Sin(currentAngle + Math.PI / 2);
+
+            Vector3 direction = transform.rotation * new Vector3((float) x, 0, (float) z);
+
+            RaycastHit hit;
+
+            Ray ray = new Ray(transform.position, direction);
+
+            if ( Physics.Raycast(ray, out hit, range) ) {
+                laserPoints[i].transform.position = hit.point;
+                laserPoints[i].SetActive(true);
+
+                distances[i] = (float) hit.distance;
+            } else {
+                laserPoints[i].SetActive(false);
+
+                distances[i] = range;
+            }
+        }
+
+        LaserScanMsg laserScanMsg = new LaserScanMsg(
+            new HeaderMsg(
+                seq,
+                Clock.GetTimeMsg(),
+                frameId
+            ),
+            minAngle,
+            maxAngle,
+            increment,
+            Time.deltaTime,
+            10,
+            0,
+            range,
+            distances,
+            distances
+        );
+
+        ros.Publish(topicName, laserScanMsg);
+
+        seq++;
+
+        counter = (counter + 1) % numBeans; 
+    }
+}

@@ -1,0 +1,6 @@
+[submodule "ROS-TCP-Endpoint"]
+	path = ROS-TCP-Endpoint
+	url = git@github.com:Unity-Technologies/ROS-TCP-Endpoint.git
+[submodule "unity-project/Assets/arena-simulation-setup"]
+	path = unity-project/Assets/arena-simulation-setup
+	url = git@github.com:Arena-Rosnav/arena-simulation-setup.git

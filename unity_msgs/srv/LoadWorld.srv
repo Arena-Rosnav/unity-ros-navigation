@@ -1,0 +1,12 @@
+string world_name
+string world_path
+
+bool create_ground_plane
+geometry_msgs/Pose pose
+float32 width
+float32 height
+
+float32[3] origin
+---
+bool success
+string status_message

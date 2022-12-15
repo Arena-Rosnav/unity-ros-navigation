@@ -1,0 +1,3570 @@
+<?xml version="1.0" ?>
+<robot name="hospital">
+  <joint name="hospital__aws_robomaker_hospital_floor_01_floor_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_floor_01_floor_1"/>
+    <origin xyz="-0.00142 -0.01444  0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_floor_01_walls_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_floor_01_walls_1"/>
+    <origin xyz="-0.01382 -0.01378  0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_nursesstation_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_nursesstation_01_1"/>
+    <origin xyz="0  1.5 0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_elevator_01_portal_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_elevator_01_portal_1"/>
+    <origin xyz="-1.50654 19.4813   0.19" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_elevator_01_portal_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_elevator_01_portal_2"/>
+    <origin xyz="1.51134 19.48699  0.19" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_elevator_01_car_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_elevator_01_car_1"/>
+    <origin xyz="-1.49587 19.35     0.19" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_elevator_01_car_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_elevator_01_car_2"/>
+    <origin xyz="1.5407 19.35    0.19" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_elevator_01_door_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_elevator_01_door_1"/>
+    <origin xyz="-1.51 19.35  0.19" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_elevator_01_door_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_elevator_01_door_2"/>
+    <origin xyz="1.52843 19.3627   0.19" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_1"/>
+    <origin xyz="-11.0216 -13.8069   0" rpy="0      0      1.55358"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_closed_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_closed_01_1"/>
+    <origin xyz="-11.022    -7.27757   0" rpy="0      0      1.57907"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_2"/>
+    <origin xyz="11.1417 -21.4039   0" rpy="0       0      -1.55117"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_3"/>
+    <origin xyz="11.1068 -17.8472   0" rpy="0       0      -1.55117"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_4"/>
+    <origin xyz="11.1374 -14.1551   0" rpy="0       0      -1.55117"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_5"/>
+    <origin xyz="-11.0332 -17.61     0" rpy="0      0      1.55358"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_6"/>
+    <origin xyz="-11.0086 -21.7566   0" rpy="0      0      1.55358"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_1"/>
+    <origin xyz="11.1777 -18.4129   0" rpy="1.57519 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__StorageRack_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__StorageRack_1"/>
+    <origin xyz="9.07005e+00 -1.03582e+01 -7.57769e+08" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_2"/>
+    <origin xyz="11.1179 -14.6493   0" rpy="1.57639 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Chair_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Chair_1"/>
+    <origin xyz="-6.0306e-01 -7.7859e-01 -1.0000e-05" rpy="-1.54997 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Chair_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Chair_2"/>
+    <origin xyz="0.62649 -0.74366  0" rpy="-1.57079 -1.57079  0.03633"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Scrubs_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Scrubs_1"/>
+    <origin xyz="-9.61916 -12.5112    0" rpy="1.58885 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Scrubs_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Scrubs_2"/>
+    <origin xyz="0.05459 4.05849 0" rpy="1.55333 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PatientWheelChair_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PatientWheelChair_1"/>
+    <origin xyz="-5.46091  1.23577  0" rpy="-3.11907 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Scrubs_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Scrubs_3"/>
+    <origin xyz="-5.38513  1.82526  0" rpy="3.07481 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__WhiteChipChair_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__WhiteChipChair_1"/>
+    <origin xyz="-8.87142e+00  9.15706e+00 -7.57769e+08" rpy="1.57079 -1.41811  3.14159"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__TrolleyBed_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__TrolleyBed_1"/>
+    <origin xyz="4.85934e+00 -4.87228e+00 -7.57769e+08" rpy="1.57079 -1.57079  3.14159"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__SurgicalTrolley_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__SurgicalTrolley_1"/>
+    <origin xyz="11.4301   3.56328  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_3"/>
+    <origin xyz="-11.2304 -21.1134   0" rpy="1.59404 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_1"/>
+    <origin xyz="-7.9025   6.49258  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_2"/>
+    <origin xyz="-7.89464  8.01997  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_3"/>
+    <origin xyz="-6.39087  6.45458  0" rpy="1.58142 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_4"/>
+    <origin xyz="-6.41405  8.00716  0" rpy="1.58142 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_5"/>
+    <origin xyz="-6.32415  6.47504  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_6"/>
+    <origin xyz="-6.32415  8.03276  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_7_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_7"/>
+    <origin xyz="-4.83084  6.47504  0" rpy="1.58142 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_8_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_8"/>
+    <origin xyz="-4.85665  8.03276  0" rpy="1.58142 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__VisitorKidSit_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__VisitorKidSit_1"/>
+    <origin xyz="-7.69163  6.9857   0" rpy="-0.00301 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__FemaleVisitorSit_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__FemaleVisitorSit_1"/>
+    <origin xyz="-7.61435  7.50057  0" rpy="0.02972 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__AdjTable_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__AdjTable_1"/>
+    <origin xyz="1.2174  -5.60888  0" rpy="-1.57952 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_9_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_9"/>
+    <origin xyz="8.18933 6.61196 0" rpy="1.56541 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_10_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_10"/>
+    <origin xyz="8.18939 8.16785 0" rpy="1.56541 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_11_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_11"/>
+    <origin xyz="6.80281 6.60106 0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_12_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_12"/>
+    <origin xyz="6.80281 8.1542  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_13_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_13"/>
+    <origin xyz="6.73748 6.5915  0" rpy="1.56541 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_14_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_14"/>
+    <origin xyz="6.7505  8.15452 0" rpy="1.56541 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_15_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_15"/>
+    <origin xyz="5.17896 6.59309 0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PotatoChipChair_16_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PotatoChipChair_16"/>
+    <origin xyz="5.1811  8.14489 0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_CoffeeTable_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_CoffeeTable_01_1"/>
+    <origin xyz="-10.2383 -29.9144   0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_Sofa_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_Sofa_01_1"/>
+    <origin xyz="-1.10770e+01 -3.05544e+01 -1.00000e-05" rpy="2.00000e-05 0.00000e+00 1.56984e+00"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_TV_02_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_TV_02_1"/>
+    <origin xyz="-12.4122  -28.4594    1.53211" rpy="0      0      3.13999"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_KitchenCabinet_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_KitchenCabinet_01_1"/>
+    <origin xyz="-11.1379 -25.6941   0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_Refrigerator_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_Refrigerator_01_1"/>
+    <origin xyz="-9.28238 -24.5015    0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_SofaB_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_SofaB_01_1"/>
+    <origin xyz="-10.8238 -28.6662   0" rpy="-1.00000e-05  0.00000e+00 -1.56116e+00"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_SofaB_01_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_SofaB_01_2"/>
+    <origin xyz="-9.73697 -28.6538    0" rpy="1.00000e-05  0.00000e+00 -1.56077e+00"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitA_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitA_01_1"/>
+    <origin xyz="1.14738 -6.92303  1.41115" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_1"/>
+    <origin xyz="2.40772 -3.61975  1.54508" rpy="0       0      -1.57619"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MopCart3_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MopCart3_1"/>
+    <origin xyz="1.07736e+00 -8.59036e+00 -6.00000e-05" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MaleVisitorSit_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MaleVisitorSit_1"/>
+    <origin xyz="6.41259 8.18749 0" rpy="-3.13645 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Drawer_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Drawer_1"/>
+    <origin xyz="3.18472 -6.54185  0" rpy="-3.12986 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Drawer_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Drawer_2"/>
+    <origin xyz="3.19085 -5.94838  0" rpy="-3.12986 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__OfficeChairBlack_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__OfficeChairBlack_1"/>
+    <origin xyz="1.20234 -6.39435  0" rpy="1.56045 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__OfficeChairBlack_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__OfficeChairBlack_2"/>
+    <origin xyz="-1.25321 -6.4505   0" rpy="1.56045 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__AdjTable_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__AdjTable_2"/>
+    <origin xyz="-1.26728 -5.69226  0" rpy="-1.57952 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitA_01_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitA_01_2"/>
+    <origin xyz="-0.70609 -6.93108  1.41115" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitA_01_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitA_01_3"/>
+    <origin xyz="-1.97245 -6.9216   1.41115" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Drawer_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Drawer_3"/>
+    <origin xyz="-3.02001 -6.54343  0" rpy="-0.00524 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Drawer_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Drawer_4"/>
+    <origin xyz="-2.99762 -5.94782  0" rpy="-0.00524 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_2"/>
+    <origin xyz="-2.4334  -3.38621  1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__ElderLadyPatient_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__ElderLadyPatient_1"/>
+    <origin xyz="-1.09972e+01  2.31350e-01  1.65000e-03" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__ElderLadyPatient_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__ElderLadyPatient_2"/>
+    <origin xyz="-1.08133e+01 -1.35925e+01  1.65000e-03" rpy="1.57079 -1.57079  3.11654"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_4"/>
+    <origin xyz="-11.0878   -7.00992   0" rpy="1.5643  -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_Trash_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_Trash_01_1"/>
+    <origin xyz="3.16170e-01 -6.58235e+00  9.00000e-04" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_Trash_01_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_Trash_01_2"/>
+    <origin xyz="-4.36640e-01 -6.57758e+00  9.00000e-04" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_Trash_01_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_Trash_01_3"/>
+    <origin xyz="-1.21773e+01 -2.76293e+01  8.90000e-04" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_01_1"/>
+    <origin xyz="-9.06141 -31.9238    1.38136" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_01_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_01_2"/>
+    <origin xyz="-11.7398  -31.9011    1.38136" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__InstrumentCart1_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__InstrumentCart1_1"/>
+    <origin xyz="-11.8071 -16.1825   0" rpy="-0.00377 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__ElderMalePatient_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__ElderMalePatient_1"/>
+    <origin xyz="-1.11165e+01 -1.72377e+01  1.65000e-03" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__InstrumentCart2_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__InstrumentCart2_1"/>
+    <origin xyz="-12.0906   -1.87329   0.05187" rpy="0.00693 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__InstrumentCart2_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__InstrumentCart2_2"/>
+    <origin xyz="-11.5231    1.34237   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_Carpet_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_Carpet_01_1"/>
+    <origin xyz="-10.7338 -29.9243   0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MetalCabinet_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MetalCabinet_1"/>
+    <origin xyz="-11.1128  11.6546   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MetalCabinet_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MetalCabinet_2"/>
+    <origin xyz="-11.1876   4.2888   0" rpy="1.5679  -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_5"/>
+    <origin xyz="-1.10106e+01  8.95050e+00 -8.20000e-03" rpy="1.53577 -1.5704  -0.00771"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_6"/>
+    <origin xyz="-11.025     7.10335   0" rpy="-1.60581 -1.57077 -3.13762"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BedTable_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BedTable_1"/>
+    <origin xyz="-1.047589e+01  1.394420e+00  1.180000e-03" rpy="1.57079 -1.57079  3.14159"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BedTable_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BedTable_2"/>
+    <origin xyz="-1.05874e+01 -1.25084e+01  1.18000e-03" rpy="1.54508 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BedsideTable_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BedsideTable_1"/>
+    <origin xyz="-1.21499e+01 -2.63111e+00  1.80000e-04" rpy="3.13281 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_7_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_7"/>
+    <origin xyz="-11.0426    0.06612   0" rpy="0      0      1.56614"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_half_open_01_8_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_half_open_01_8"/>
+    <origin xyz="-11.0309   -3.75145   0" rpy="0      0      1.56614"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_floor_01_ceiling_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_floor_01_ceiling_1"/>
+    <origin xyz="0.01655 0.05072 0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_ramp_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_ramp_01_1"/>
+    <origin xyz="-1.70996 16.3685   0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__AnesthesiaMachine_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__AnesthesiaMachine_1"/>
+    <origin xyz="-1.28478 -21.1127    0" rpy="1.58267 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__TrolleyBedPatient_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__TrolleyBedPatient_1"/>
+    <origin xyz="-1.83202 -19.26119   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Scrubs_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Scrubs_4"/>
+    <origin xyz="-0.93616 -18.2252    0" rpy="0.05492 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Shower_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Shower_1"/>
+    <origin xyz="-1.07422 -16.13319   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Shower_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Shower_2"/>
+    <origin xyz="0.85332 -16.1492    0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__SurgicalTrolley_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__SurgicalTrolley_2"/>
+    <origin xyz="-0.41142 -22.2085    0" rpy="3.13063 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__SurgicalTrolley_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__SurgicalTrolley_3"/>
+    <origin xyz="3.11747 -19.6565    0" rpy="-4.80000e-04 -1.57079e+00  0.00000e+00"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__SurgicalTrolleyMed_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__SurgicalTrolleyMed_1"/>
+    <origin xyz="0.7708  -19.77489   0" rpy="-3.13877 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Scrubs_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Scrubs_5"/>
+    <origin xyz="-2.66657 -18.3733    0" rpy="1.56857 -1.56418  1.90134"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__InstrumentCart1_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__InstrumentCart1_2"/>
+    <origin xyz="-11.8071 -16.1825   0" rpy="-0.00377 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__InstrumentCart2_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__InstrumentCart2_3"/>
+    <origin xyz="-0.86953 -17.7436    0" rpy="-1.57339 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__StorageRackCovered_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__StorageRackCovered_1"/>
+    <origin xyz="0.54647 -18.39849   0" rpy="-0.00495 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__StorageRack_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__StorageRack_2"/>
+    <origin xyz="-2.69866 -22.4178    0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__KitchenSink_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__KitchenSink_1"/>
+    <origin xyz="3.06236e+00 -1.18809e+01 -1.61000e-03" rpy="1.5683  -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__KitchenSink_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__KitchenSink_2"/>
+    <origin xyz="-3.09305e+00 -1.18988e+01 -1.60000e-03" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Toilet_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Toilet_1"/>
+    <origin xyz="4.64520e-01 -1.18023e+01  5.25000e-03" rpy="-1.57079 -1.55399  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Toilet_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Toilet_2"/>
+    <origin xyz="-5.45520e-01 -1.18033e+01  3.80000e-04" rpy="1.57338 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_1"/>
+    <origin xyz="-1.14723 -10.143     1.57344" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_2"/>
+    <origin xyz="1.16956 -10.1327    1.57344" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_3"/>
+    <origin xyz="1.2703  -12.9084    1.57344" rpy="0       0      -3.14134"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_4"/>
+    <origin xyz="-1.06108 -12.9155    1.57344" rpy="0       0      -3.14134"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Toilet_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Toilet_3"/>
+    <origin xyz="7.48390e+00 1.42958e+00 3.80000e-04" rpy="1.57649 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Toilet_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Toilet_4"/>
+    <origin xyz="-7.01185e+00  1.41830e+00  3.80000e-04" rpy="1.57649 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Toilet_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Toilet_5"/>
+    <origin xyz="-7.02851e+00 -1.27728e+01  3.70000e-04" rpy="1.57649 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Toilet_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Toilet_6"/>
+    <origin xyz="7.48696e+00 -1.26170e+01  3.80000e-04" rpy="1.57649 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_3"/>
+    <origin xyz="7.89294 -13.6155    1.54508" rpy="0       0      -1.57619"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_4"/>
+    <origin xyz="7.88791 0.44544 1.54508" rpy="0       0      -1.57619"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_5"/>
+    <origin xyz="-7.92095  0.84255  1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_6"/>
+    <origin xyz="-7.90937 -13.3417    1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_7_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_7"/>
+    <origin xyz="-12.3841    6.01232   1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_8_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_8"/>
+    <origin xyz="-12.4276    9.98828   1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_02_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_02_1"/>
+    <origin xyz="-9.08927  9.19494  1.84129" rpy="0      0     -1.5625"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_9_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_9"/>
+    <origin xyz="-8.94468  7.73571  1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_02_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_02_2"/>
+    <origin xyz="-9.08305  7.04089  1.84129" rpy="0      0     -1.5625"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_5"/>
+    <origin xyz="-9.9148  11.9172   1.40573" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_6"/>
+    <origin xyz="-10.2134    7.89752   1.40573" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_7_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_7"/>
+    <origin xyz="1.06166e+01  9.06291e+00 -8.20000e-03" rpy="-1.6058  -1.56991 -3.11285"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_8_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_8"/>
+    <origin xyz="1.06006e+01  6.90956e+00 -8.20000e-03" rpy="-1.60579 -1.56966 -3.10576"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MetalCabinet_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MetalCabinet_3"/>
+    <origin xyz="11.1356   4.33826  0" rpy="1.5679  -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MetalCabinet_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MetalCabinet_4"/>
+    <origin xyz="11.1318 11.6838  0" rpy="-1.59449 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_10_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_10"/>
+    <origin xyz="9.06517 6.78742 1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_02_11_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_02_11"/>
+    <origin xyz="9.06517 9.05857 1.54508" rpy="0      0      1.57083"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_02_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_02_3"/>
+    <origin xyz="12.3972   6.98849  1.84129" rpy="0      0     -1.5625"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_02_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_02_4"/>
+    <origin xyz="12.3972   8.87466  1.84129" rpy="0      0     -1.5625"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_02_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_02_5"/>
+    <origin xyz="-3.4385  -6.00525  1.84129" rpy="0      0      1.56777"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_7_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_7"/>
+    <origin xyz="10.596    7.88308  1.40573" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitD_01_8_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitD_01_8"/>
+    <origin xyz="9.98896 11.914    1.40573" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__ParkingTrolleyMin_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__ParkingTrolleyMin_1"/>
+    <origin xyz="7.15840e-01 -1.71496e+01 -1.20000e-04" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__PatientFSit_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__PatientFSit_1"/>
+    <origin xyz="-10.8902    9.18683   0.22896" rpy="0.01081 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MaleVisitorOnPhone_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MaleVisitorOnPhone_1"/>
+    <origin xyz="-0.76031  7.58474  0" rpy="-2.72053 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__FemaleVisitor_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__FemaleVisitor_1"/>
+    <origin xyz="0.41683 7.44353 0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MaleVisitorSit_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MaleVisitorSit_2"/>
+    <origin xyz="-5.98588  6.41261  0" rpy="0.01728 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Scrubs_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Scrubs_6"/>
+    <origin xyz="-1.29468 -20.4093    0" rpy="-3.08145 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_open_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_open_01_1"/>
+    <origin xyz="11.0051  -6.91002  0" rpy="0       0      -1.58737"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_closed_01_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_closed_01_2"/>
+    <origin xyz="11.0303  -3.70124  0" rpy="0       0      -1.58306"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_closed_01_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_closed_01_3"/>
+    <origin xyz="10.9586   0.15948  0" rpy="0       0      -1.58306"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__MalePatientBed_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__MalePatientBed_1"/>
+    <origin xyz="1.13771e+01 -7.38891e+00  1.65000e-03" rpy="-1.57079 -1.57079  3.11598"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__CGMClassic_9_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__CGMClassic_9"/>
+    <origin xyz="11.3613 -21.8867   0" rpy="1.58946 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__StorageRackCoverOpen_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__StorageRackCoverOpen_1"/>
+    <origin xyz="9.15016 3.44263 0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_warehouse_ClutteringC_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_warehouse_ClutteringC_01_1"/>
+    <origin xyz="-10.5553  15.0297   0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_warehouse_ClutteringA_01_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_warehouse_ClutteringA_01_1"/>
+    <origin xyz="10.8233 15.2153  0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__StorageRack_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__StorageRack_3"/>
+    <origin xyz="-10.1178 -10.4694   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__StorageRack_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__StorageRack_4"/>
+    <origin xyz="-9.91557  3.5644   0" rpy="-1.57079e+00 -1.57079e+00 -2.70000e-04"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__StorageRackCovered_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__StorageRackCovered_2"/>
+    <origin xyz="10.294 -10.577   0" rpy="1.56309 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_closed_01_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_closed_01_4"/>
+    <origin xyz="10.9819 -26.2149   0" rpy="0       0      -1.58306"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_closed_01_5_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_closed_01_5"/>
+    <origin xyz="1.31506 -30.5771    0" rpy="0     0     3.1401"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_closed_01_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_closed_01_6"/>
+    <origin xyz="5.49659 -30.5364    0" rpy="0     0     3.1401"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_hospital_curtain_closed_01_7_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_hospital_curtain_closed_01_7"/>
+    <origin xyz="9.80048 -30.5918    0" rpy="0     0     3.1401"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__FemaleVisitorSit_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__FemaleVisitorSit_2"/>
+    <origin xyz="7.85005 6.59766 0" rpy="-3.13289 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__InstrumentCart1_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__InstrumentCart1_3"/>
+    <origin xyz="-1.83539 -17.5879    0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__ElderMalePatient_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__ElderMalePatient_2"/>
+    <origin xyz="-1.12471e+01 -3.58130e+00  1.65000e-03" rpy="-1.62498 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_02_6_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_02_6"/>
+    <origin xyz="-3.74211 14.8725   1.54379" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__aws_robomaker_residential_PortraitE_01_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__aws_robomaker_residential_PortraitE_01_3"/>
+    <origin xyz="3.85701 14.8779   1.69742" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Chair_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Chair_3"/>
+    <origin xyz="-1.37633 -0.7958   0" rpy="-1.54997 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__XRayMachine_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__XRayMachine_1"/>
+    <origin xyz="1.79424 -21.3329    0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__IVStand_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__IVStand_1"/>
+    <origin xyz="-11.0966 -16.4963   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BloodPressureMonitor_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BloodPressureMonitor_1"/>
+    <origin xyz="-9.96258 -11.9361    0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__IVStand_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__IVStand_2"/>
+    <origin xyz="-2.30593 -20.2447    0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BMWCart_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BMWCart_1"/>
+    <origin xyz="-10.931   -1.9483   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Scrubs_7_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Scrubs_7"/>
+    <origin xyz="-9.75874 -2.67552  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BPCart_1_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BPCart_1"/>
+    <origin xyz="-1.01788e+01  1.11730e+01  3.44000e-03" rpy="-1.56769 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BPCart_2_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BPCart_2"/>
+    <origin xyz="12.0072   4.64764  0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BPCart_3_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BPCart_3"/>
+    <origin xyz="-11.7236  11.4294   0" rpy="-1.57079 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__BPCart_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__BPCart_4"/>
+    <origin xyz="-1.14703e+01  5.05999e+00  3.44000e-03" rpy="-1.56769 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <joint name="hospital__Chair_4_joint" type="fixed">
+    <parent link="hospital__base"/>
+    <child link="hospital__Chair_4"/>
+    <origin xyz="1.30985 -0.72718  0" rpy="-1.53445 -1.57079  0"/>
+    <axis xyz="0 0 0"/>
+    <limit lower="0" upper="0" effort="0" velocity="0"/>
+  </joint>
+  <link name="hospital__base">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_floor_01_floor_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_floor_01_floor/meshes/aws_robomaker_hospital_floor_01_floor_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_floor_01_walls_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_floor_01_walls/meshes/aws_robomaker_hospital_floor_01_walls_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_nursesstation_01_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_nursesstation_01/meshes/aws_robomaker_hospital_nursesstation_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_elevator_01_portal_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_elevator_01_portal/meshes/aws_robomaker_hospital_elevator_01_portal_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_elevator_01_portal_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_elevator_01_portal/meshes/aws_robomaker_hospital_elevator_01_portal_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_elevator_01_car_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_elevator_01_car/meshes/aws_robomaker_hospital_elevator_01_car_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_elevator_01_car_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_elevator_01_car/meshes/aws_robomaker_hospital_elevator_01_car_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_elevator_01_door_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_elevator_01_door/meshes/aws_robomaker_hospital_elevator_01_door_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_elevator_01_door_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_elevator_01_door/meshes/aws_robomaker_hospital_elevator_01_door_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_closed_01_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_closed_01/meshes/aws_robomaker_hospital_curtain_closed_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_5">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_6">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__StorageRack_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/StorageRack/meshes/StorageRack.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Chair_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Chair/meshes/Chair.obj" scale="0.00817 0.00817 0.00817"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Chair_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Chair/meshes/Chair.obj" scale="0.00817 0.00817 0.00817"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Scrubs_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Scrubs/meshes/scrubs.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Scrubs_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Scrubs/meshes/scrubs.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PatientWheelChair_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PatientWheelChair/meshes/PatientWheelChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Scrubs_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Scrubs/meshes/scrubs.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__WhiteChipChair_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/WhiteChipChair/meshes/WhiteChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__TrolleyBed_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/TrolleyBed/meshes/TrolleyBed.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__SurgicalTrolley_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/SurgicalTrolley/meshes/trolley.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_5">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_6">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_7">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_8">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__VisitorKidSit_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/VisitorKidSit/meshes/VisitorKidSit.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__FemaleVisitorSit_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/FemaleVisitorSit/meshes/FemaleVisitorSit.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__AdjTable_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/AdjTable/meshes/AdjTable.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_9">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_10">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_11">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_12">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_13">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_14">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_15">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PotatoChipChair_16">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PotatoChipChair/meshes/PotatoChipChair.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_CoffeeTable_01_1">
+    <inertial>
+      <mass value="21.7"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.8137499999999998" ixy="0" ixz="0" iyy="2.76675" iyz="0" izz="3.254"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_CoffeeTable_01/meshes/aws_CoffeeTable_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_Sofa_01_1">
+    <inertial>
+      <mass value="72.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_Sofa_01/meshes/aws_Sofa_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_TV_02_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_TV_02/meshes/aws_TV_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_KitchenCabinet_01_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_Refrigerator_01_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_SofaB_01_1">
+    <inertial>
+      <mass value="72.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_SofaB_01_2">
+    <inertial>
+      <mass value="72.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_SofaB_01/meshes/aws_SofaB_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitA_01_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitA_02/meshes/aws_PortraitA_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_1">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MopCart3_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MopCart3/meshes/MopCart3.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MaleVisitorSit_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MaleVisitorSit/meshes/MaleVisitorSit.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Drawer_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Drawer/meshes/Drawer.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Drawer_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Drawer/meshes/Drawer.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__OfficeChairBlack_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/OfficeChairBlack/meshes/OfficeChairBlack.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__OfficeChairBlack_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/OfficeChairBlack/meshes/OfficeChairBlack.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__AdjTable_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/AdjTable/meshes/AdjTable.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitA_01_2">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitA_02/meshes/aws_PortraitA_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitA_01_3">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitA_01/meshes/aws_PortraitA_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Drawer_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Drawer/meshes/Drawer.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Drawer_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Drawer/meshes/Drawer.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_2">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__ElderLadyPatient_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/ElderLadyPatient/meshes/ElderFemale.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__ElderLadyPatient_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/ElderLadyPatient/meshes/ElderFemale.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_Trash_01_1">
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.05288" ixy="0" ixz="0" iyy="0.05288" iyz="0" izz="0.09132"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_Trash_01/meshes/aws_Trash_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_Trash_01_2">
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.05288" ixy="0" ixz="0" iyy="0.05288" iyz="0" izz="0.09132"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_Trash_01/meshes/aws_Trash_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_Trash_01_3">
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.05288" ixy="0" ixz="0" iyy="0.05288" iyz="0" izz="0.09132"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_Trash_01/meshes/aws_Trash_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_01_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_01_2">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__InstrumentCart1_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/InstrumentCart1/meshes/InstrumentCart1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__ElderMalePatient_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/ElderMalePatient/meshes/ElderMalePatient.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__InstrumentCart2_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/InstrumentCart2/meshes/InstrumentCart2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__InstrumentCart2_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/InstrumentCart2/meshes/InstrumentCart2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_Carpet_01_1">
+    <inertial>
+      <mass value="8.1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_Carpet_01/meshes/aws_Carpet_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MetalCabinet_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MetalCabinet/meshes/MetalCabinet.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MetalCabinet_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MetalCabinet/meshes/MetalCabinet.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_5">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_6">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BedTable_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BedTable/meshes/BedTable.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BedTable_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BedTable/meshes/BedTable.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BedsideTable_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BedsideTable/meshes/BedsideTable.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_7">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_half_open_01_8">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_half_open_01/meshes/aws_robomaker_hospital_curtain_half_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_floor_01_ceiling_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_floor_01_ceiling/meshes/aws_robomaker_hospital_floor_01_ceiling_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_ramp_01_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_ramp_01/meshes/aws_robomaker_hospital_ramp_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__AnesthesiaMachine_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/AnesthesiaMachine/meshes/AnesthesiaMachine.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__TrolleyBedPatient_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/TrolleyBedPatient/meshes/TrolleyBedPatient.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Scrubs_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Scrubs/meshes/scrubs.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Shower_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Shower/meshes/Shower.obj" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Shower_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Shower/meshes/Shower.obj" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__SurgicalTrolley_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/SurgicalTrolley/meshes/trolley.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__SurgicalTrolley_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/SurgicalTrolley/meshes/trolley.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__SurgicalTrolleyMed_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/SurgicalTrolleyMed/meshes/SurgicalTrolleyMed.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Scrubs_5">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Scrubs/meshes/scrubs.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__InstrumentCart1_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/InstrumentCart1/meshes/InstrumentCart1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__InstrumentCart2_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/InstrumentCart2/meshes/InstrumentCart2.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__StorageRackCovered_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/StorageRackCovered/meshes/StorageRackCovered.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__StorageRack_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/StorageRack/meshes/StorageRack.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__KitchenSink_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/KitchenSink/meshes/kitchenSink.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__KitchenSink_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/KitchenSink/meshes/kitchenSink.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Toilet_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Toilet/meshes/toilet.obj" scale="1.75 1.75 1.75"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Toilet_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Toilet/meshes/toilet.obj" scale="1.75 1.75 1.75"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_1">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_2">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_3">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_4">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Toilet_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Toilet/meshes/toilet.obj" scale="1.75 1.75 1.75"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Toilet_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Toilet/meshes/toilet.obj" scale="1.75 1.75 1.75"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Toilet_5">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Toilet/meshes/toilet.obj" scale="1.75 1.75 1.75"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Toilet_6">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Toilet/meshes/toilet.obj" scale="1.75 1.75 1.75"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_3">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_4">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_5">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_6">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_7">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_8">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_02_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_9">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_02_2">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_5">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_6">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_7">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_8">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MetalCabinet_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MetalCabinet/meshes/MetalCabinet.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MetalCabinet_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MetalCabinet/meshes/MetalCabinet.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_10">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_01/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_02_11">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_02_3">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_02_4">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_01/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_02_5">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_7">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitD_01_8">
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitD_02/meshes/aws_PortraitD_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__ParkingTrolleyMin_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/ParkingTrolleyMin/meshes/trolleymin.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__PatientFSit_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/PatientFSit/meshes/PatientFSit.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MaleVisitorOnPhone_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MaleVisitorOnPhone/meshes/MaleVisitorStatic.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__FemaleVisitor_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/FemaleVisitor/meshes/FemaleVisitor.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MaleVisitorSit_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MaleVisitorSit/meshes/MaleVisitorSit.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Scrubs_6">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Scrubs/meshes/scrubs.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_open_01_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_open_01/meshes/aws_robomaker_hospital_curtain_open_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_closed_01_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_closed_01/meshes/aws_robomaker_hospital_curtain_closed_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_closed_01_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_closed_01/meshes/aws_robomaker_hospital_curtain_closed_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__MalePatientBed_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/MalePatientBed/meshes/MalePatientBed.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__CGMClassic_9">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/CGMClassic/meshes/CGMClassic.obj" scale="0.01 0.01 0.01"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__StorageRackCoverOpen_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/StorageRackCoverOpen/meshes/StorageRackCoverOpen.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_warehouse_ClutteringC_01_1">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1.558" ixy="0" ixz="0" iyy="1.821" iyz="0" izz="1.892"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_warehouse_ClutteringA_01_1">
+    <inertial>
+      <mass value="2"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.841" ixy="0" ixz="0" iyy="0.954" iyz="0" izz="1.422"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__StorageRack_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/StorageRack/meshes/StorageRack.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__StorageRack_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/StorageRack/meshes/StorageRack.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__StorageRackCovered_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/StorageRackCovered/meshes/StorageRackCovered.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_closed_01_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_closed_01/meshes/aws_robomaker_hospital_curtain_closed_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_closed_01_5">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_closed_01/meshes/aws_robomaker_hospital_curtain_closed_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_closed_01_6">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_closed_01/meshes/aws_robomaker_hospital_curtain_closed_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_hospital_curtain_closed_01_7">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_hospital_curtain_closed_01/meshes/aws_robomaker_hospital_curtain_closed_01_visual.dae" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__FemaleVisitorSit_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/FemaleVisitorSit/meshes/FemaleVisitorSit.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__InstrumentCart1_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/InstrumentCart1/meshes/InstrumentCart1.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__ElderMalePatient_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/ElderMalePatient/meshes/ElderMalePatient.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_02_6">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_02/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__aws_robomaker_residential_PortraitE_01_3">
+    <inertial>
+      <mass value="1"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/aws_robomaker_residential_PortraitE_01/meshes/aws_PortraitE_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Chair_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Chair/meshes/Chair.obj" scale="0.00817 0.00817 0.00817"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__XRayMachine_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/XRayMachine/meshes/XRayMachine.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__IVStand_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/IVStand/meshes/IVStand.obj" scale="0.00817 0.00817 0.00817"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BloodPressureMonitor_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BloodPressureMonitor/meshes/BloodPressureMonitor.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__IVStand_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/IVStand/meshes/IVStand.obj" scale="0.00817 0.00817 0.00817"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BMWCart_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BMWCart/meshes/Cart_BMW.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Scrubs_7">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Scrubs/meshes/scrubs.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BPCart_1">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BPCart/meshes/Cart_BP.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BPCart_2">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BPCart/meshes/Cart_BP.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BPCart_3">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BPCart/meshes/Cart_BP.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__BPCart_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/BPCart/meshes/Cart_BP.obj" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="hospital__Chair_4">
+    <inertial>
+      <mass value="0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual name="hospital__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://arena-simulation-setup/worlds/hospital/models/Chair/meshes/Chair.obj" scale="0.00817 0.00817 0.00817"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

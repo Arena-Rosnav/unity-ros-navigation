@@ -1,0 +1,11 @@
+string model_name
+string model_namespace
+string reference_frame
+string model_urdf_path
+
+geometry_msgs/Pose initial_pose
+
+float32[11] additional_data
+---
+bool success
+string status_message
