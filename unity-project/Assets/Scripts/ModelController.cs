@@ -33,7 +33,6 @@ public class ModelController : MonoBehaviour
     }
 
     private SpawnRobotResponse SpawnRobot(SpawnRobotRequest request) {
-
         string name = request.model_name;
         // string modelNameReference = request.model_name_reference;
         string modelNamespace = request.model_namespace; // TODO
@@ -70,7 +69,7 @@ public class ModelController : MonoBehaviour
         laserScan.minAngle = additionalData[0];
         laserScan.maxAngle = additionalData[1];
         laserScan.range = additionalData[3];
-        laserScan.numBeans = (int) additionalData[4];
+        laserScan.numBeams = (int) additionalData[4];
 
         // TODO
         laserScan.frameId = robotName + "_laser_link";
@@ -83,8 +82,6 @@ public class ModelController : MonoBehaviour
 
         Drive drive = robot.AddComponent(typeof(Drive)) as Drive;
         drive.topicNamespace = modelNamespace;
-
-
 
         activeModels.Add(name, robot);
 

@@ -24,7 +24,7 @@ public class Clock : MonoBehaviour
         InvokeRepeating("PublishClock", 0f, 1 / publishClockFrequency);
     }
 
-    // Update is called once per frame
+    // Update is called once per frame // FixedUpdate
     void PublishClock()
     {
         ClockMsg clockMsg = new ClockMsg(

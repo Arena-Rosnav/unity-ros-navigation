@@ -11,7 +11,7 @@ public class Scan : MonoBehaviour {
     public float minAngle;
     public float maxAngle;
 
-    public int numBeans;
+    public int numBeams;
     public float range;
     public int updateRate;
 
@@ -40,13 +40,13 @@ public class Scan : MonoBehaviour {
         ros = ROSConnection.GetOrCreateInstance();
         ros.RegisterPublisher<LaserScanMsg>(topicName);
 
-        increment = (float) (maxAngle - minAngle) / ((float) numBeans);
+        increment = (float) (maxAngle - minAngle) / ((float) numBeams);
         seq = 0;
 
-        distances = new float[numBeans];
+        distances = new float[numBeams];
         laserPoints = new List<GameObject>();
 
-        for(int i = 0; i < numBeans; i++ ) {
+        for(int i = 0; i < numBeams; i++ ) {
             GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             Collider collider = sphere.GetComponent<Collider>();
             collider.enabled = false;
@@ -60,7 +60,7 @@ public class Scan : MonoBehaviour {
     }
 
     void Update() {
-        for( int i = 0; i < numBeans; i++ ) {
+        for( int i = 0; i < numBeams; i++ ) {
             if ( counter == i ) {
                 laserPoints[0].GetComponent<Renderer>().material.color = new Color(255, 0, 0, 1);
             } else {
@@ -111,6 +111,6 @@ public class Scan : MonoBehaviour {
 
         seq++;
 
-        counter = (counter + 1) % numBeans; 
+        counter = (counter + 1) % numBeams; 
     }
 }
